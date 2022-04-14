@@ -60,7 +60,9 @@ body {
 /* ===== end titles ===== */
 
 /* ===== promise ===== */
-.promise {}
+.promise {
+	padding: 50px 0px;
+}
 
 .promise__container {}
 
