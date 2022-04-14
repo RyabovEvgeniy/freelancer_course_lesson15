@@ -104,5 +104,31 @@ body {
 	letter-spacing: 0.15px;
 	color: #4B4B4B;
 }
-
 /* ===== end promise ===== */
+
+/* ===== services ===== */
+.services {
+	padding: 50px 0px;
+}
+.services__container {
+}
+.services__header {
+}
+.services-items {
+	display: flex;
+	margin: 0px -12px;
+}
+.services-item {
+	flex: 0 1 33.333%;
+	padding: 0px 12px;
+}
+.item-services {
+}
+.item-services__image {
+}
+.item-services__title {
+}
+.item-services__text {
+}
+
+/* ===== end services ===== */
