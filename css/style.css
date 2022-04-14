@@ -5,6 +5,7 @@
 	display: flex;
 	flex-direction: column;
 }
+
 /* ===== end wrapper ===== */
 
 /* ===== body ===== */
@@ -12,6 +13,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 }
+
 /* ===== end body ===== */
 
 /* ===== container ===== */
@@ -20,10 +22,49 @@ body {
 	margin: 0 auto;
 	padding: 0px 15px;
 }
+
 /* ===== end container ===== */
 
 /* ===== main ===== */
 .main {
 	flex: 1 1 auto;
 }
+
 /* ===== end main ===== */
+
+/* ===== titles ===== */
+.titles {}
+
+.titles__label {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	background: url('../img/title-icon.svg') 0 -2px no-repeat;
+	padding: 0px 0px 0px 33px;
+}
+.titles__label:not(:last-child) {
+	margin: 0px 0px 33px 0px;
+}
+
+.titles__text {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+	color: #000000
+}
+
+/* ===== end titles ===== */
+
+/* ===== promise ===== */
+.promise {}
+
+.promise__container {}
+
+.promise__header {
+	margin: 0px 0px 68px 0px;
+}
+
+/* ===== end promise ===== */
