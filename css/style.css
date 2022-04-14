@@ -45,6 +45,7 @@ body {
 	background: url('../img/title-icon.svg') 0 -2px no-repeat;
 	padding: 0px 0px 0px 33px;
 }
+
 .titles__label:not(:last-child) {
 	margin: 0px 0px 33px 0px;
 }
@@ -65,6 +66,41 @@ body {
 
 .promise__header {
 	margin: 0px 0px 68px 0px;
+}
+
+.promise__items {
+	display: flex;
+	margin: 0px -12px;
+}
+
+.promise-item {
+	flex: 0 1 33.333%;
+	padding: 0px 12px;
+	column-gap: 23px;
+}
+
+.item-promise {
+	display: flex;
+	align-items: flex-start;
+}
+
+.item-promise__image {}
+
+.item-promise__body {
+
+}
+
+.item-promise__title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 1.37;
+	color: #F2726F;
+}
+
+.item-promise__text {
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
 }
 
 /* ===== end promise ===== */
