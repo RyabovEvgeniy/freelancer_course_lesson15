@@ -12,7 +12,8 @@
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	background-color: #F5F5F5;;
+	background-color: #F5F5F5;
+	;
 }
 
 /* ===== end body ===== */
@@ -57,17 +58,20 @@ body {
 	line-height: 1.17;
 	color: #000000
 }
+
 .item-title {
 	font-weight: 900;
 	font-size: 19px;
 	line-height: 1.37;
 	color: #F2726F;
 }
+
 .item-text {
 	line-height: 1.5;
 	letter-spacing: 0.15px;
 	color: #4B4B4B;
 }
+
 /* ===== end titles ===== */
 
 /* ===== promise ===== */
@@ -101,42 +105,46 @@ body {
 
 .item-promise__image {}
 
-.item-promise__body {
+.item-promise__body {}
 
-}
+.item-promise__title {}
 
-.item-promise__title {
-
-}
 .item-promise__title:not(:last-child) {
 	margin: 0px 0px 20px 0px;
 }
 
-.item-promise__text {
+.item-promise__text {}
 
-}
 /* ===== end promise ===== */
 
 /* ===== services ===== */
 .services {
 	padding: 110px 0px 112px 0px;
-	background-color: #5e5e5e;
+	text-align: center;
 }
-.services__container {
-}
+
+.services__container {}
+
 .services__header {
 	margin: 0px 0px 78px 0px;
+	text-align: left;
 }
+
 .services-items {
 	display: flex;
 	flex-wrap: wrap;
-	row-gap: 24px;	
-	margin: 0px -12px;	
+	row-gap: 24px;
+	margin: 0px -12px;
 }
+.services-items:not(:last-child) {
+	margin: 0px 0px 66px 0px;
+}
+
 .services-item {
 	flex: 0 1 33.333%;
-	padding: 0px 12px;	
+	padding: 0px 12px;
 }
+
 .item-services {
 	display: flex;
 	flex-direction: column;
@@ -146,19 +154,39 @@ body {
 	padding: 50px 44px 50px 43px;
 	min-height: 100%;
 }
+
 .item-services__image {
 	width: 63px;
 }
+
 .item-services__image:not(:last-child) {
 	margin: 0px 0px 33px 0px;
 }
-.item-services__title {
-}
+
+.item-services__title {}
+
 .item-services__title:not(:last-child) {
 	margin: 0px 0px 20px 0px;
 }
+
 .item-services__text {
 	text-align: center;
 }
 
+.services__button {
+	border-radius: 8px;
+	background-color: #f2726f;
+	display: inline-flex;
+}
+
+.services__link {
+	font-style: italic;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 9px 25px;
+}
 /* ===== end services ===== */
