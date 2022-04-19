@@ -12,6 +12,7 @@
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
+	background-color: #F5F5F5;;
 }
 
 /* ===== end body ===== */
@@ -118,30 +119,46 @@ body {
 
 /* ===== services ===== */
 .services {
-	padding: 50px 0px;
+	padding: 110px 0px 112px 0px;
+	background-color: #5e5e5e;
 }
 .services__container {
 }
 .services__header {
+	margin: 0px 0px 78px 0px;
 }
 .services-items {
 	display: flex;
-	flex-wrap: wrap;	
-	margin: 0px -12px;
+	flex-wrap: wrap;
+	row-gap: 24px;	
+	margin: 0px -12px;	
 }
 .services-item {
 	flex: 0 1 33.333%;
-	padding: 0px 12px;
-	/* align-self: center; */
-	text-align: center;
+	padding: 0px 12px;	
 }
 .item-services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 50px 44px 50px 43px;
+	min-height: 100%;
 }
 .item-services__image {
+	width: 63px;
+}
+.item-services__image:not(:last-child) {
+	margin: 0px 0px 33px 0px;
 }
 .item-services__title {
 }
+.item-services__title:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
 .item-services__text {
+	text-align: center;
 }
 
 /* ===== end services ===== */
