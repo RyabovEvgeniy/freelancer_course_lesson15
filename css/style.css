@@ -56,7 +56,17 @@ body {
 	line-height: 1.17;
 	color: #000000
 }
-
+.item-title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 1.37;
+	color: #F2726F;
+}
+.item-text {
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
 /* ===== end titles ===== */
 
 /* ===== promise ===== */
@@ -72,6 +82,8 @@ body {
 
 .promise__items {
 	display: flex;
+	flex-wrap: wrap;
+	row-gap: 30px;
 	margin: 0px -12px;
 }
 
@@ -93,16 +105,14 @@ body {
 }
 
 .item-promise__title {
-	font-weight: 900;
-	font-size: 19px;
-	line-height: 1.37;
-	color: #F2726F;
+
+}
+.item-promise__title:not(:last-child) {
+	margin: 0px 0px 20px 0px;
 }
 
 .item-promise__text {
-	line-height: 1.5;
-	letter-spacing: 0.15px;
-	color: #4B4B4B;
+
 }
 /* ===== end promise ===== */
 
@@ -116,11 +126,14 @@ body {
 }
 .services-items {
 	display: flex;
+	flex-wrap: wrap;	
 	margin: 0px -12px;
 }
 .services-item {
 	flex: 0 1 33.333%;
 	padding: 0px 12px;
+	/* align-self: center; */
+	text-align: center;
 }
 .item-services {
 }
