@@ -190,3 +190,50 @@ body {
 	padding: 9px 25px;
 }
 /* ===== end services ===== */
+
+/* ===== gustomers ===== */
+.gustomers {
+	padding: 50px 0px;
+}
+.gustomers__container {
+}
+.gustomers-items {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	margin: 0px -12px;
+}
+.gustomers-item {
+	flex: 0 1 33.333%;
+	padding: 0px 12px;
+}
+.item-gustomers {
+	border-radius: 20px;
+	background-color: #fff;
+	min-height: 100%;
+	padding: 50px 44px 40px 43px;
+}
+.item-gustomers_no-bg {
+	padding: 0px 0px;
+	background-color: #F5F5F5;
+}
+.item-gustomers__image {
+}
+.item-gustomers__title {
+}
+.item-title {
+}
+.item-gustomers__text {
+}
+.item-gustomers__text:not(:last-child) {
+	margin: 0px 0px 18px 0px;
+}
+.item-gustomers__footer {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+}
+.item-text {
+}
+
+/* ===== end gustomers ===== */
