@@ -153,7 +153,6 @@ body {
 
 .appointment__image {
 	flex: 0 1 50%;
-	/* position: relative; */
 	z-index: 100;
 	margin: 44px 0px 0px 0px;
 }
@@ -163,12 +162,33 @@ body {
 	display: flex;
 	flex-direction: column;	
 	padding: 112px 0px 169px 99px;
+	position: relative;
 }
-
-.content-appointment {}
+.appointment__content::before {
+	content: "";
+	background: url('../img/appointment_line.svg') 0 0 no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 4px;
+	left: 31px;
+}
+.appointment__content::after {
+	content: "";
+	background: url('../img/appointment_ball.png') 0 0 no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 110px;
+	left: 545px;
+}
+.content-appointment {
+	
+}
 
 .content-appointment__text {
 	max-width: 411px;
+	z-index: 150;
 }
 
 .content-appointment__text:not(:last-child) {
@@ -191,6 +211,7 @@ body {
 	border-radius: 8px;
 	background-color: #f2726f;
 	padding: 12px 34px;
+	z-index: 150;
 }
 
 /* ===== end appointment ===== */
