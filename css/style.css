@@ -119,29 +119,80 @@ body {
 
 /* ===== appointment ===== */
 .appointment {
-	background-color: #29C3BE;;
+	background-color: #29C3BE;
+	position: relative;
 }
+
+
 .appointment__body {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
+	padding: 0px 5px;
+	
 }
+.appointment__body::before {
+	display: block;
+	content: "";
+	background: url('../img/appointment_image.svg') 0 0 no-repeat;
+	width: 216px;
+	height: 317px;
+	position: absolute;
+	bottom: 50px;
+	left: -4px;
+}
+.appointment__body::after {
+	display: block;
+	content: "";
+	background: url('../img/appointment_image.png') 0 0 no-repeat;
+	width: 473.18px;
+	height: 350px;
+	position: absolute;
+	left: 0px;
+}
+
+.appointment__image {
+	flex: 0 1 50%;
+	/* position: relative; */
+	z-index: 100;
+	margin: 44px 0px 0px 0px;
+}
+
 .appointment__content {
+	flex: 0 1 50%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
+	padding: 112px 0px 169px 99px;
+}
+
+.content-appointment {}
+
+.content-appointment__text {
 	max-width: 411px;
 }
-.content-appointment {
+
+.content-appointment__text:not(:last-child) {
+	margin: 0px 0px 42px 0px;
 }
-.content-appointment__text {
-}
-.titles {
-}
-.titles__text {
-}
+
 .titles__text_white {
+	color: #FFFFFF;
 }
+
 .appointment__button {
+	align-self: flex-start;
+	text-align: center;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-radius: 8px;
+	background-color: #f2726f;
+	padding: 12px 34px;
 }
+
 /* ===== end appointment ===== */
 
 /* ===== services ===== */
@@ -214,51 +265,58 @@ body {
 	color: #FFFFFF;
 	padding: 9px 25px;
 }
+
 /* ===== end services ===== */
 
 /* ===== gustomers ===== */
 .gustomers {
 	padding: 50px 0px;
 }
-.gustomers__container {
-}
+
+.gustomers__container {}
+
 .gustomers-items {
 	display: flex;
 	flex-wrap: wrap;
 	row-gap: 24px;
 	margin: 0px -12px;
 }
+
 .gustomers-item {
 	flex: 0 1 33.333%;
 	padding: 0px 12px;
 }
+
 .item-gustomers {
 	border-radius: 20px;
 	background-color: #fff;
 	min-height: 100%;
 	padding: 50px 44px 40px 43px;
 }
+
 .item-gustomers_no-bg {
 	padding: 0px 0px;
 	background-color: #F5F5F5;
 }
-.item-gustomers__image {
-}
-.item-gustomers__title {
-}
-.item-title {
-}
-.item-gustomers__text {
-}
+
+.item-gustomers__image {}
+
+.item-gustomers__title {}
+
+.item-title {}
+
+.item-gustomers__text {}
+
 .item-gustomers__text:not(:last-child) {
 	margin: 0px 0px 18px 0px;
 }
+
 .item-gustomers__footer {
 	display: flex;
 	align-items: center;
 	gap: 17px;
 }
-.item-text {
-}
+
+.item-text {}
 
 /* ===== end gustomers ===== */
